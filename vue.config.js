@@ -1,4 +1,28 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production' ? '//cdn.suisuijiang.com/calculator' : '.',
-    outputDir: 'dist/calculator',
+    publicPath: './',
+    configureWebpack: {
+        optimization: {
+            splitChunks: {
+                chunks: 'async',
+                minSize: 30000,
+                maxSize: 400000,
+                minChunks: 1,
+                maxAsyncRequests: 5,
+                maxInitialRequests: 3,
+                automaticNameDelimiter: '~',
+                name: true,
+                cacheGroups: {
+                    vendors: {
+                    test: /[\\/]node_modules[\\/]/,
+                    priority: -10
+                    },
+                    default: {
+                    minChunks: 2,
+                    priority: -20,
+                    reuseExistingChunk: true
+                    }
+                }
+            }
+        }
+    }
 };

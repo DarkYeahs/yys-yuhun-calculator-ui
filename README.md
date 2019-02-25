@@ -1,23 +1,34 @@
 # yys-yuhun-calculator-ui
 
-[阴阳师御魂计算器](https://github.com/jiajunsu/calculator_of_Onmyoji)的 Web 客户端
+## Project setup
+```
+yarn install
+```
 
-在线地址: http://yys.suisuijiang.com/calculator/
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
 
-## 如何使用
+### Compiles and minifies for production
+```
+yarn run build
+```
 
-1. 下载服务端
+### Run your tests
+```
+yarn run test
+```
 
-## 常见问题
+### Lints and fixes files
+```
+yarn run lint
+```
 
-待定...
+### Run your unit tests
+```
+yarn run test:unit
+```
 
-## 更新日志
-
-[更新日志](./changelog.md)
-
-## 如何运行
-
-1. 安装依赖 `yarn install`
-2. 开发模式运行 `yarn run serve`
-
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
